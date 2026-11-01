@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuturial</title>
+    <style>
+        .alert {
+            color: black;
+            font-style: italic;
+            background:rgb(98, 98, 209);
+            padding: 5px;
+        }
+        .body {
+            color: blue;            
+            background-color: aquamarine;
+            padding: 5px;
+        }
+        .footer {
+            position: fixed;
+            background-color: black;
+            bottom: 0%;
+            left:0%;
+            width: 100%;
+            text-align: center;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <p>@All rights and reserved by Swati Singh</p>
+    </div>
+    <div class="body">
+    <h1 id="heading">Welcome</h1>
+    <p>Hello!</p>
+    <p>How are you?</p>
+    <p>Are you doing good?</p>
+    <p>Hope you will do great in the future</p>
+    
+    </div>
+    <script>
+        /* First step:- Do this step first*/
+        let div =document.createElement('div')
+        div.id ="paragraph";
+        div.className ="alert";
+        div.innerHTML = "<p>Congrats! You have created a div. </p>";
+        
+
+        /* second step:- Do this after completing first step*/
+        let heading = document.getElementById("heading");
+        heading.innerHTML = '&#128517;'
+
+       /* third step:- Do this after completing second step*/
+       document.querySelector('header p').innerHTML ="<strong> Good Job!</strong>";
+        </script>
+</body>
+</html>
